@@ -9,7 +9,7 @@ mkdir rust-nightly-build
 cd rust-nightly-build
 
 ../rust-nightly/configure --target=arm-unknown-linux-gnueabihf
-make
+#make
 
 cd ..
 
