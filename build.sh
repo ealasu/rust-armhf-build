@@ -10,6 +10,6 @@ cd rust-nightly
 mkdir build
 cd build
 
-../configure --target=arm-linux-gnueabihf
+../configure --target=arm-unknown-linux-gnueabihf
 make
 
