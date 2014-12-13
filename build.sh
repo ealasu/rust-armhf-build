@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -O https://static.rust-lang.org/dist/rust-nightly.tar.gz
-unzip rust-nightly.tar.gz
+tar -xf rust-nightly.tar.gz
 
 cd rust-nightly
 mkdir build
