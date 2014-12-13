@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget https://static.rust-lang.org/dist/rust-nightly.tar.gz
+curl -O https://static.rust-lang.org/dist/rust-nightly.tar.gz
 unzip rust-nightly.tar.gz
 
 cd rust-nightly
