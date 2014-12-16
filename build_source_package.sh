@@ -5,7 +5,7 @@ set -e
 git submodule init
 git submodule update --depth 1
 
-cp -r debian rust/
+cp -rf debian rust/
 
-tar -czf rust.tar.gz rust
+tar -czf rust-source.tar.gz rust
 
