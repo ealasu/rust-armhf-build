@@ -1,0 +1,13 @@
+Source: rust-nightly-armhf
+Section: devel
+Priority: extra
+Maintainer: Emanuel Alasu <emanuel.alasu@gmail.com>
+Build-Depends: debhelper (>= 7), autotools-dev, curl, python, pandoc, nodejs, po4a, gcc-4.7, g++-4.7, gcc-arm-linux-gnueabihf, g++-arm-linux-gnueabihf
+Standards-Version: 3.9.2
+Homepage: http://rust-lang.org
+
+Package: rust-nightly-armhf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Rust cross-compiler for armhf
+ Compiler, libraries and tools for the Rust programming language.
