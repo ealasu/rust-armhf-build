@@ -5,7 +5,6 @@ set -e
 git submodule init
 git submodule update --depth 1
 
-cp -rf debian rust/
-
-tar -czf rust-source.tar.gz rust
+tar -cf rust-source.tar rust
+tar --append -f rust-source.tar --transform "s/^\./rust/" ./debian
 
