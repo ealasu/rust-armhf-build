@@ -19,8 +19,8 @@ rm -rf rust-nightly
 tar -xf rust-nightly.tar.gz
 
 mkdir rust-nightly/dl
-archs=(x86_64-unknown-linux-gnu i686-unknown-linux-gnu)
-for triple in $archs ; do
+archs=( x86_64-unknown-linux-gnu i686-unknown-linux-gnu )
+for triple in "${archs[@]}" ; do
   echo "getting stage0 for $triple"
   mkdir -p rust-nightly/${triple}/stage0/bin
   (cd rust-nightly && CFG_SRC_DIR=$(pwd) ./src/etc/get-snapshot.py $triple)
