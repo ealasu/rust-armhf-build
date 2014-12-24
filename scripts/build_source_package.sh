@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+rm -rf rust-nightly
+rm -f rust-nightly-armhf_*
+
 #git clone https://github.com/rust-lang/rust --depth=1
 #(cd rust && git submodule sync)
 #(cd rust && git submodule init)
@@ -15,7 +18,6 @@ echo "version: $version"
 
 orig="rust-nightly-armhf_${version}.orig.tar.gz"
 curl -O https://static.rust-lang.org/dist/rust-nightly.tar.gz
-rm -rf rust-nightly
 tar -xf rust-nightly.tar.gz
 
 mkdir rust-nightly/dl
