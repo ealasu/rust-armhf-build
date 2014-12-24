@@ -20,7 +20,7 @@ override_dh_auto_test:
 	true
 
 override_dh_shlibdeps:
-	LD_LIBRARY_PATH=$(CURDIR)/debian/rust-nightly/usr/lib/rust/rust-nightly-armhf/lib:$(LD_LIBRARY_PATH) dh_shlibdeps -l$(CURDIR)/debian/rust-nightly/usr/lib/rust/rust-nightly-armhf/lib
+	LD_LIBRARY_PATH=$(CURDIR)/debian/rust-nightly-armhf/usr/lib/rust/rust-nightly-armhf/lib:$(LD_LIBRARY_PATH) dh_shlibdeps -l$(CURDIR)/debian/rust-nightly-armhf/usr/lib/rust/rust-nightly-armhf/lib
 
 override_dh_strip:
 	# strip doesn't seem to work with the armhf binaries we're building
