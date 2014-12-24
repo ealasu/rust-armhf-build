@@ -2,7 +2,7 @@ Source: rust-nightly-armhf
 Section: devel
 Priority: extra
 Maintainer: Emanuel Alasu <emanuel.alasu@gmail.com>
-Build-Depends: debhelper (>= 7), autotools-dev, curl, python, pandoc, nodejs, po4a, gcc-4.7, g++-4.7, gcc-arm-linux-gnueabihf, g++-arm-linux-gnueabihf
+Build-Depends: debhelper (>= 7), autotools-dev, curl, git, python, pandoc, nodejs, po4a, gcc-4.7, g++-4.7, gcc-arm-linux-gnueabihf, g++-arm-linux-gnueabihf
 Standards-Version: 3.9.2
 Homepage: http://rust-lang.org
 
