@@ -1,5 +1,6 @@
-rust-nightly-armhf (20141223-0); urgency=medium
+rust-nightly-armhf (20141223-0ubuntu1) utopic; urgency=medium
 
   * Initial release.
 
  -- Emanuel Alasu <emanuel.alasu@gmail.com>  Tue, 23 Dec 2014 23:58:19 +0000
+
